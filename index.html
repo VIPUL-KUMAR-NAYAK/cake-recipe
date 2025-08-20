@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chocolate Cake Recipes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="main-title">🍫 Chocolate Cake Recipes</h1>
+
+ 
+  <div class="recipes-container">
+
+    <!-- 1. Chocolate Cake -->
+    <div class="recipe-card">
+      <h2>Chocolate Cake</h2>
+      <img src="The-Best-Dark-Chocolate-Cake-Recipe-3 (1).jpg" class="dish-image" alt="Chocolate Cake" onclick="toggleIngredients('chocolate')" />
+
+      <div class="info">
+        <p><strong>Prep Time:</strong> 45 mins</p>
+        <p><strong>Servings:</strong> 8</p>
+      </div>
+
+      <ul id="ingredients-chocolate" class="ingredients hidden">
+        <li>2 cups flour</li>
+        <li>1 cup sugar</li>
+        <li>1 cup milk</li>
+        <li>1/2 cup cocoa powder</li>
+      </ul>
+
+      <button onclick="startCooking('chocolate')">Start Cooking</button>
+      <div id="timer-chocolate" class="timer">Step Timer: 0:00</div>
+      <ol id="steps-chocolate" class="steps"></ol>
+
+      <div class="progress-bar">
+        <div id="progress-chocolate"></div>
+      </div>
+
+      <button onclick="prevStep('chocolate')" id="prev-chocolate" disabled>Previous Step</button>
+      <button onclick="nextStep('chocolate')" id="next-chocolate" disabled>Next Step</button>
+      <button onclick="window.print()">🖨️ Print Recipe</button>
+    </div>
+
+    <!-- 2. Dark Chocolate Cake -->
+    <div class="recipe-card">
+      <h2>Dark Chocolate Cake</h2>
+      <img src="triple-chocolate-cake-4.jpg" class="dish-image" alt="Dark Chocolate Cake" onclick="toggleIngredients('dark')" />
+
+      <div class="info">
+        <p><strong>Prep Time:</strong> 50 mins</p>
+        <p><strong>Servings:</strong> 6</p>
+      </div>
+
+      <ul id="ingredients-dark" class="ingredients hidden">
+        <li>2 cups dark cocoa powder</li>
+        <li>2 cups flour</li>
+        <li>1 1/2 cups sugar</li>
+        <li>1 cup butter</li>
+      </ul>
+
+      <button onclick="startCooking('dark')">Start Cooking</button>
+      <div id="timer-dark" class="timer">Step Timer: 0:00</div>
+      <ol id="steps-dark" class="steps"></ol>
+
+      <div class="progress-bar">
+        <div id="progress-dark"></div>
+      </div>
+
+      <button onclick="prevStep('dark')" id="prev-dark" disabled>Previous Step</button>
+      <button onclick="nextStep('dark')" id="next-dark" disabled>Next Step</button>
+      <button onclick="window.print()">🖨️ Print Recipe</button>
+    </div>
+
+    <!-- 3. Chocolate Lava Cake -->
+    <div class="recipe-card">
+      <h2>Chocolate Lava Cake</h2>
+      <img src="molten-lava-cake-17.jpg" class="dish-image" alt="Chocolate Lava Cake" onclick="toggleIngredients('lava')" />
+
+      <div class="info">
+        <p><strong>Prep Time:</strong> 30 mins</p>
+        <p><strong>Servings:</strong> 4</p>
+      </div>
+
+      <ul id="ingredients-lava" class="ingredients hidden">
+        <li>1 cup dark chocolate</li>
+        <li>1/2 cup butter</li>
+        <li>1/2 cup sugar</li>
+        <li>3 eggs</li>
+      </ul>
+
+      <button onclick="startCooking('lava')">Start Cooking</button>
+      <div id="timer-lava" class="timer">Step Timer: 0:00</div>
+      <ol id="steps-lava" class="steps"></ol>
+
+      <div class="progress-bar">
+        <div id="progress-lava"></div>
+      </div>
+
+      <button onclick="prevStep('lava')" id="prev-lava" disabled>Previous Step</button>
+      <button onclick="nextStep('lava')" id="next-lava" disabled>Next Step</button>
+      <button onclick="window.print()">🖨️ Print Recipe</button>
+    </div>
+
+    <!-- 4. Chocolate Fudge Cake -->
+    <div class="recipe-card">
+      <h2>Chocolate Fudge Cake</h2>
+      <img src="Chocolate-Fudge-Cake-1.jpg" class="dish-image" alt="Chocolate Fudge Cake" onclick="toggleIngredients('fudge')" />
+
+      <div class="info">
+        <p><strong>Prep Time:</strong> 55 mins</p>
+        <p><strong>Servings:</strong> 10</p>
+      </div>
+
+      <ul id="ingredients-fudge" class="ingredients hidden">
+        <li>2 cups flour</li>
+        <li>1 1/2 cups cocoa powder</li>
+        <li>1 cup sugar</li>
+        <li>1 cup condensed milk</li>
+      </ul>
+
+      <button onclick="startCooking('fudge')">Start Cooking</button>
+      <div id="timer-fudge" class="timer">Step Timer: 0:00</div>
+      <ol id="steps-fudge" class="steps"></ol>
+
+      <div class="progress-bar">
+        <div id="progress-fudge"></div>
+      </div>
+
+      <button onclick="prevStep('fudge')" id="prev-fudge" disabled>Previous Step</button>
+      <button onclick="nextStep('fudge')" id="next-fudge" disabled>Next Step</button>
+      <button onclick="window.print()">🖨️ Print Recipe</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
